@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:solar/components/side_button.dart';
-import 'package:solar/screens/addCurier/add_curier_view_desktop.dart';
+import 'package:solar/screens/addCurierDispecer/add_curier_dispecer_view_desktop.dart';
 import 'package:solar/screens/curier/curier_view.dart';
 import 'package:solar/screens/general/general_view_desktop.dart';
+import 'package:solar/screens/generalDispecer/general_dispecer_view_desktop.dart';
 import 'package:solar/screens/provider/provider_view_desktop.dart';
 
 class HomeViewDesktop extends StatefulWidget {
@@ -73,6 +74,19 @@ class _HomeViewDesktopState extends State<HomeViewDesktop>
                     });
                   },
                   isBorder: true,
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                SideButton(
+                  backgroundColor: const Color(0xFF3C3938),
+                  imageAsset: 'dispecer.png',
+                  onPressed: () {
+                    setState(() {
+                      selectedIndex = 4;
+                    });
+                  },
+                  isBorder: false,
                 ),
                 const SizedBox(
                   height: 10,
@@ -176,12 +190,15 @@ class _HomeViewDesktopState extends State<HomeViewDesktop>
                       )
                     : const SizedBox(),
                 selectedIndex == 2
-                    ? const AddCurierViewDesktop()
+                    ? const AddCurierDispecerViewDesktop()
                     : const SizedBox(),
                 selectedIndex == 3
                     ? CurierView(
                         curierName: curierName,
                       )
+                    : const SizedBox(),
+                selectedIndex == 4
+                    ? const GeneralDispecerViewDesktop()
                     : const SizedBox(),
               ],
             ),

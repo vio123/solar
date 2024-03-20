@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:solar/components/card_statistics.dart';
+import 'package:solar/components/left_icon_btn.dart';
 
 class CurierView extends StatefulWidget {
   final String curierName;
@@ -73,42 +74,11 @@ class _CurierViewState extends State<CurierView> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            ElevatedButton(
-                              onPressed: () {
-                                // Add your button press action here
-                              },
-                              style: ElevatedButton.styleFrom(
-                                textStyle: const TextStyle(color: Colors.white),
-                                // Text color
-                                backgroundColor: Colors.blue,
-                                // Background color
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(
-                                      5.0), // Border radius
-                                ),
-                                padding:
-                                    EdgeInsets.zero, // Remove default padding
-                              ),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  const SizedBox(width: 5.0),
-                                  Image.asset(
-                                    'lib/assets/images/incarca_fisier.png',
-                                    width: 16,
-                                    height: 16,
-                                    fit: BoxFit.contain,
-                                  ),
-                                  const SizedBox(width: 5.0),
-                                  const Text(
-                                    'Incarca fisier',
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                  const SizedBox(width: 5.0),
-                                  // Add some right margin
-                                ],
-                              ),
+                            LeftIconBtn(
+                              onPressed: () {},
+                              text: 'Incarca fisier',
+                              imageAsset: 'incarca_fisier.png',
+                              backgroundColor: Colors.blue,
                             ),
                             const SizedBox(),
                           ],
@@ -174,41 +144,12 @@ class _CurierViewState extends State<CurierView> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            ElevatedButton(
+                            LeftIconBtn(
                               onPressed: () {},
-                              style: ElevatedButton.styleFrom(
-                                textStyle: const TextStyle(color: Colors.white),
-                                // Text color
-                                backgroundColor: const Color(0xFF35312F),
-                                // Background color
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(
-                                      5.0), // Border radius
-                                ),
-                                padding:
-                                    EdgeInsets.zero, // Remove default padding
-                              ),
-                              child: const SizedBox(
-                                width: 80.0,
-                                height: 35.0,
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    SizedBox(width: 5.0),
-                                    Icon(
-                                      Icons.delete,
-                                      color: Color(0xFFBCBCBC),
-                                    ),
-                                    // Add some left margin
-                                    Text(
-                                      'Sterge',
-                                      style: TextStyle(color: Colors.white),
-                                    ),
-                                    SizedBox(width: 5.0),
-                                    // Add some right margin
-                                  ],
-                                ),
+                              text: 'Sterge',
+                              icon: const Icon(
+                                Icons.delete,
+                                color: Color(0xFFBCBCBC),
                               ),
                             ),
                             const SizedBox(),

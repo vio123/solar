@@ -5,14 +5,14 @@ import 'package:solar/components/custom_dropdown.dart';
 import 'package:solar/components/document_btn.dart';
 import 'package:solar/components/text_input.dart';
 
-class AddCurierViewDesktop extends StatefulWidget {
-  const AddCurierViewDesktop({super.key});
+class AddCurierDispecerViewDesktop extends StatefulWidget {
+  const AddCurierDispecerViewDesktop({super.key});
 
   @override
-  State<AddCurierViewDesktop> createState() => _AddCurierViewDesktopState();
+  State<AddCurierDispecerViewDesktop> createState() => _AddCurierDispecerViewDesktopState();
 }
 
-class _AddCurierViewDesktopState extends State<AddCurierViewDesktop> {
+class _AddCurierDispecerViewDesktopState extends State<AddCurierDispecerViewDesktop> {
   final TextEditingController numeController = TextEditingController();
   final TextEditingController prenumeController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
