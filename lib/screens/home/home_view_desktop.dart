@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:solar/components/side_button.dart';
 import 'package:solar/screens/addCurierDispecer/add_curier_dispecer_view_desktop.dart';
-import 'package:solar/screens/curier/curier_view.dart';
+import 'package:solar/screens/curier/curier_view_desktop.dart';
 import 'package:solar/screens/general/general_view_desktop.dart';
 import 'package:solar/screens/generalDispecer/general_dispecer_view_desktop.dart';
 import 'package:solar/screens/provider/provider_view_desktop.dart';
@@ -193,7 +193,7 @@ class _HomeViewDesktopState extends State<HomeViewDesktop>
                     ? const AddCurierDispecerViewDesktop()
                     : const SizedBox(),
                 selectedIndex == 3
-                    ? CurierView(
+                    ? CurierViewDesktop(
                         curierName: curierName,
                       )
                     : const SizedBox(),

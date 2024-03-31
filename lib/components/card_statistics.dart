@@ -26,27 +26,31 @@ class CardStatistics extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: SizedBox(
-          width: 230,
+          width: MediaQuery.of(context).size.width * 0.15,
           height: 70,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Flexible(
-                child: Text(
-                  title,
-                  style: const TextStyle(
-                    color: Color(0xFFBCBCBC),
-                    fontSize: 12,
+                child: FittedBox(
+                  child: Text(
+                    title,
+                    style: const TextStyle(
+                      color: Color(0xFFBCBCBC),
+                      fontSize: 10,
+                    ),
                   ),
                 ),
               ),
               Flexible(
-                child: Text(
-                  value,
-                  style: const TextStyle(
-                    color: Color(0xFFDADADA),
-                    fontSize: 28,
+                child: FittedBox(
+                  child: Text(
+                    value,
+                    style: const TextStyle(
+                      color: Color(0xFFDADADA),
+                      fontSize: 28,
+                    ),
                   ),
                 ),
               ),

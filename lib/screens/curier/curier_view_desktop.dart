@@ -4,19 +4,19 @@ import 'package:flutter/widgets.dart';
 import 'package:solar/components/card_statistics.dart';
 import 'package:solar/components/left_icon_btn.dart';
 
-class CurierView extends StatefulWidget {
+class CurierViewDesktop extends StatefulWidget {
   final String curierName;
 
-  const CurierView({
+  const CurierViewDesktop({
     super.key,
     required this.curierName,
   });
 
   @override
-  State<CurierView> createState() => _CurierViewState();
+  State<CurierViewDesktop> createState() => _CurierViewDesktopState();
 }
 
-class _CurierViewState extends State<CurierView> {
+class _CurierViewDesktopState extends State<CurierViewDesktop> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

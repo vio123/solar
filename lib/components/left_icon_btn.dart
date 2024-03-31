@@ -46,6 +46,7 @@ class LeftIconBtn extends StatelessWidget {
                     fit: BoxFit.contain,
                   )
                 : icon,
+            const SizedBox(width: 5.0),
             Text(
               text,
               style: const TextStyle(color: Colors.white),

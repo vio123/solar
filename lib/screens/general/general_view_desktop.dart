@@ -27,7 +27,7 @@ class _GeneralViewDesktopState extends State<GeneralViewDesktop> {
         child: Column(
           children: [
             SizedBox(
-              height: 200,
+              height: MediaQuery.of(context).size.height * 0.3,
               child: GridView(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3,

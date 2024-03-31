@@ -26,8 +26,7 @@ class CardCurier extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(15.0),
         child: SizedBox(
-          width: 280,
-          height: 55,
+          height: 40,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -55,6 +54,9 @@ class CardCurier extends StatelessWidget {
                       width: 35,
                       height: 35,
                     ),
+                  ),
+                  const SizedBox(
+                    width: 10,
                   ),
                   TextButton(
                     onPressed: () {

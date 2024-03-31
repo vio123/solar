@@ -1,10 +1,17 @@
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:solar/screens/home/home_view.dart';
 import 'package:solar/screens/login/login_view.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    DevicePreview(
+      enabled: !kReleaseMode,
+      builder: (context) => const MyApp(), // Wrap your app
+    ),
+  );
 }
 
 final GoRouter _router = GoRouter(
@@ -38,6 +45,17 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
           canvasColor: const Color(0xFF1B1918),
+          appBarTheme: const AppBarTheme(
+            color: Colors.black,
+          ),
+          iconButtonTheme: IconButtonThemeData(
+            style: ButtonStyle(
+              iconColor: MaterialStateProperty.all(Colors.white),
+            ),
+          ),
+          drawerTheme: const DrawerThemeData(
+            backgroundColor: Color(0xFF1B1918),
+          ),
         ),
         routerConfig: _router,
       ),

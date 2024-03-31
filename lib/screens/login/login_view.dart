@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:solar/util/responsive.dart';
 
 import '../../components/text_input.dart';
 
@@ -57,7 +58,7 @@ class _LoginViewState extends State<LoginView> {
             ),
           ),
           child: SizedBox(
-            width: MediaQuery.of(context).size.width * 0.4,
+            width: Responsive.isDesktop(context) ? MediaQuery.of(context).size.width * 0.4 : MediaQuery.of(context).size.width * 0.8,
             child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
