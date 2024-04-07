@@ -27,7 +27,7 @@ class CardStatistics extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: SizedBox(
           width: MediaQuery.of(context).size.width * 0.15,
-          height: 70,
+          height: 94,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,

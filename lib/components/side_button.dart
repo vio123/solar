@@ -46,13 +46,11 @@ class SideButton extends StatelessWidget {
         onPressed.call();
       },
       child: imageAsset.isNotEmpty
-          ? Flexible(
-            child: SizedBox(
-                width: 25,
-                height: 25,
-                child: Image.asset('lib/assets/images/$imageAsset'),
-              ),
-          )
+          ? SizedBox(
+              width: 25,
+              height: 25,
+              child: Image.asset('lib/assets/images/$imageAsset'),
+            )
           : icon,
     );
   }

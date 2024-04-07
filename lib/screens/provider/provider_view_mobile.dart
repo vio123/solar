@@ -30,7 +30,7 @@ class _ProviderViewMobileState extends State<ProviderViewMobile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF1B1918),
+      backgroundColor: const Color(0xFF312E2C),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

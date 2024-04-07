@@ -33,7 +33,7 @@ class _ProviderViewDesktopState extends State<ProviderViewDesktop> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF1B1918),
+      backgroundColor: const Color(0xFF312E2C),
       body: Padding(
         padding: const EdgeInsets.all(30.0),
         child: SingleChildScrollView(
@@ -87,6 +87,9 @@ class _ProviderViewDesktopState extends State<ProviderViewDesktop> {
                     ),
                   ),
                 ],
+              ),
+              const SizedBox(
+                height: 20,
               ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,

@@ -21,7 +21,7 @@ class _GeneralViewDesktopState extends State<GeneralViewDesktop> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF1B1918),
+      backgroundColor: const Color(0xFF312E2C),
       body: Padding(
         padding: const EdgeInsets.all(30.0),
         child: Column(
@@ -47,6 +47,9 @@ class _GeneralViewDesktopState extends State<GeneralViewDesktop> {
                   Container(),
                 ],
               ),
+            ),
+            const SizedBox(
+              height: 20,
             ),
             Expanded(
               child: GridView(

@@ -19,7 +19,7 @@ class _CurierViewMobileState extends State<CurierViewMobile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF1B1918),
+      backgroundColor: const Color(0xFF312E2C),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(8.0),

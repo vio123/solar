@@ -24,9 +24,9 @@ class _HomeViewDesktopState extends State<HomeViewDesktop>
   Widget build(BuildContext context) {
     super.build(context);
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: const Color(0xFF121110),
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: const Color(0xFF121110),
         title: Container(
           width: MediaQuery.of(context).size.width * 0.6,
           height: 40,

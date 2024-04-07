@@ -20,7 +20,7 @@ class _CurierViewDesktopState extends State<CurierViewDesktop> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF1B1918),
+      backgroundColor: const Color(0xFF312E2C),
       body: Padding(
         padding: const EdgeInsets.all(30.0),
         child: SingleChildScrollView(
@@ -598,31 +598,48 @@ class _CurierViewDesktopState extends State<CurierViewDesktop> {
                     width: 20,
                   ),
                   const Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      CardStatistics(
-                        title: 'TOTAL CURSE',
-                        value: '421',
+                      SizedBox(
+                        width: 220,
+                        height: 74,
+                        child: CardStatistics(
+                          title: 'TOTAL CURSE',
+                          value: '421',
+                        ),
                       ),
                       SizedBox(
                         height: 20,
                       ),
-                      CardStatistics(
-                        title: 'INCASARI SAPTAMANA',
-                        value: '112.781 RON',
+                      SizedBox(
+                        width: 220,
+                        height: 74,
+                        child: CardStatistics(
+                          title: 'INCASARI SAPTAMANA',
+                          value: '112.781 RON',
+                        ),
                       ),
                       SizedBox(
                         height: 20,
                       ),
-                      CardStatistics(
-                        title: 'INCASARI LUNA',
-                        value: '442.663 RON',
+                      SizedBox(
+                        width: 220,
+                        height: 74,
+                        child: CardStatistics(
+                          title: 'INCASARI LUNA',
+                          value: '442.663 RON',
+                        ),
                       ),
                       SizedBox(
                         height: 20,
                       ),
-                      CardStatistics(
-                        title: 'INCASARI AN',
-                        value: '2.612.521 RON',
+                      SizedBox(
+                        width: 220,
+                        height: 74,
+                        child: CardStatistics(
+                          title: 'INCASARI AN',
+                          value: '2.612.521 RON',
+                        ),
                       ),
                     ],
                   ),

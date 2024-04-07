@@ -51,19 +51,17 @@ class CardDispecer extends StatelessWidget {
                     padding: EdgeInsets.zero,
                     minimumSize: const Size(35, 35),
                   ),
-                  child: Flexible(
-                    child: Container(
-                      width: 25,
-                      height: 35,
-                      decoration: BoxDecoration(
-                        color: const Color(0xFF35312F),
-                        borderRadius: BorderRadius.circular(5),
-                      ),
-                      child: const Icon(
-                        Icons.calendar_month,
-                        color: Color(0xFFBCBCBC),
-                        size: 16,
-                      ),
+                  child: Container(
+                    width: 25,
+                    height: 35,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF35312F),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    child: const Icon(
+                      Icons.calendar_month,
+                      color: Color(0xFFBCBCBC),
+                      size: 16,
                     ),
                   ),
                 ),
